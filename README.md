@@ -17,7 +17,7 @@
 
 
   Рассмотреть
-  https://www.opentopodata.org
-  https://www.open-elevation.com
-  https://en.wikipedia.org/wiki/Shuttle_Radar_Topography_Mission
-  https://project.linuxfoundation.org/hubfs/Overture%20Maps/Building%20Heights%20Whitepaper_041423.pdf
+   - https://www.opentopodata.org
+   - https://www.open-elevation.com
+   - https://en.wikipedia.org/wiki/Shuttle_Radar_Topography_Mission
+   - https://project.linuxfoundation.org/hubfs/Overture%20Maps/Building%20Heights%20Whitepaper_041423.pdf
