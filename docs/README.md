@@ -20,9 +20,17 @@
 ![image](https://github.com/Liverson-Al/Heightmap/assets/80148366/036c5fe1-0458-483a-a124-dd8ebc0fee21)
 
 
+ - Opentopodata - бесплатный REST API сервер с кучей датасетов, в том числе и с глобальным - aster30m. Можно получить с помощью запросов ([api.opentopodata.org](https://www.opentopodata.org/api/)) или отдельно всё скачать
+![image](https://github.com/Liverson-Al/Heightmap/assets/80148366/2a29d1a7-e624-46af-9b2f-52d498458894)
+
+
+ - Open-Elevation - бесплатный REST API сервер, датасет неизвестен. Документация - https://github.com/Jorl17/open-elevation/blob/master/docs/api.md, пример GET запроса - https://api.open-elevation.com/api/v1/lookup?locations=41.161758,-8.583933
+
+
+ - Yandex API - ограниченно-бесплатный сервис, но в рассмотренных продуктах не было замеченно получение высоты по координате. Но для последующей отрисовки глобальной карты можно воспользоваться их JavaScript API
+(https://yandex.ru/dev/maps/commercial/?utm_source=undefined&utm_medium=undefined&utm_campaign=undefined#addition)
+
+
+
   Рассмотреть
-   - https://www.opentopodata.org
-   - https://www.open-elevation.com
-   - https://en.wikipedia.org/wiki/Shuttle_Radar_Topography_Mission
-   - https://project.linuxfoundation.org/hubfs/Overture%20Maps/Building%20Heights%20Whitepaper_041423.pdf
-   - https://yandex.ru/dev/maps/commercial/?utm_source=undefined&utm_medium=undefined&utm_campaign=undefined
+   
