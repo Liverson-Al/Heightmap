@@ -20,7 +20,7 @@
 ![image](https://github.com/Liverson-Al/Heightmap/assets/80148366/036c5fe1-0458-483a-a124-dd8ebc0fee21)
 
 
- - Opentopodata - бесплатный REST API сервер с кучей датасетов, в том числе и с глобальным - aster30m. Можно получить с помощью запросов ([api.opentopodata.org](https://www.opentopodata.org/api/)) или отдельно всё скачать
+ - Opentopodata - бесплатный REST API сервер с кучей датасетов, в том числе и с глобальным - aster30m. Можно получить с помощью запросов (https://www.opentopodata.org/) или отдельно всё скачать
 ![image](https://github.com/Liverson-Al/Heightmap/assets/80148366/2a29d1a7-e624-46af-9b2f-52d498458894)
 
 
