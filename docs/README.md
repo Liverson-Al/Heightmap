@@ -35,5 +35,6 @@
 
 
   Рассмотреть
-   - ...
+   - Элементарный пространственный анализ - https://kpfu.ru/staff_files/F2134311690/KURS_LEKCIJ_GIT.pdf
+   - https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%8D%D1%84%D1%84%D0%B8%D1%86%D0%B8%D0%B5%D0%BD%D1%82_%D0%BC%D0%B0%D1%81%D1%88%D1%82%D0%B0%D0%B1%D0%B0
    
