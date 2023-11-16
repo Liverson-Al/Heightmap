@@ -33,6 +33,9 @@
 (https://yandex.ru/dev/maps/commercial/?utm_source=undefined&utm_medium=undefined&utm_campaign=undefined#addition)
 
 
+ - three.js heightmap - готовое решение, но для чб скринов высот. Можно либо его допилить по типу выделения территории, получения этих координат, получение фото из Heghtmapper и его дальнейшая отрисовка. Также в описании этого видео есть ссылки на документации библиотек
+(https://www.youtube.com/watch?v=wULUAhckH9w)
+
 
   Рассмотреть
    - Элементарный пространственный анализ - https://kpfu.ru/staff_files/F2134311690/KURS_LEKCIJ_GIT.pdf
