@@ -51,26 +51,6 @@ func getElevation(x float64, y float64) (res float64, err error) {
 	return res, err
 }
 
-// str = "10,10|20,20|41.161758,-8.583933"          n = n^2 (dim of arr)
-func getElevationArr(str string, n int) (res [][]float64, err error) {
-	ans := JsonResponse{}
-	url := "https://api.open-elevation.com/api/v1/lookup?locations=" + str
-	err = getJson(url, &ans) //получаем ответ от сервера в виде множества Results
-	if err != nil {
-		println(err)
-		return
-	}
-	element := 0
-	for i := 0; i < n; i++ {
-		for j := 0; j < n; j++ {
-			//res[ans.Results[element].Latitude][ans.Results[element].Longitude] = ans.Results[element].Elevation  //По-хорошему сделать map с такими данными
-			res[i][j] = ans.Results[element].Elevation
-			element++
-		}
-	}
-	return res, err
-}
-
 // x - Latitude, y - Longitude, stepStr - step, n - arr size
 func getJsonStr(x string, y string, stepStr string, n int) string {
 	var str string
@@ -94,7 +74,6 @@ func getJsonStr(x string, y string, stepStr string, n int) string {
 }
 
 func main() {
-
 	//ввод данных через консоль
 	var x string
 	var y string
@@ -114,27 +93,26 @@ func main() {
 		println(err)
 		return
 	}
+
+	ans := JsonResponse{}
+	url := "https://api.open-elevation.com/api/v1/lookup?locations=" + getJsonStr(x, y, stepStr, n)
+	err = getJson(url, &ans) //получаем ответ от сервера в виде множества Results
+	if err != nil {
+		println(err)
+		return
+	}
+	element := 0
+
 	data := make([][]float64, n)
+	for i := 0; i < n; i++ {
+		data[i] = make([]float64, n)
+	}
 
 	for i := 0; i < n; i++ {
 		for j := 0; j < n; j++ {
-			//От этой штуки отказываюсь, т.к. быстрее получить от сервера большой json, чем посылать тонну запросов
-			//res, err := getElevation(float64(i), float64(j)) //получаем значение одной высоты
-			str := getJsonStr(x, y, stepStr, n)
-			data, err = getElevationArr(str, n)
-
-			if err != nil {
-				println(err)
-				return
-			}
-			//data[i] = append(data[i], res)
-			fmt.Printf("%+v\t", data[i][j])
+			data[i][j] = ans.Results[element].Elevation
+			element++
 		}
-		fmt.Printf("\n")
 	}
-
-	//fmt.Println("results: %+v\n", data[2][2])
-	//fmt.Printf("results: %+v\n", &data)
+	fmt.Println(data)
 }
-
-//test push 4git
